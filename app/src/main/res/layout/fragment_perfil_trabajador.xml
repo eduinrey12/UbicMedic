@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilTrabajadorFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <ImageButton
+                android:id="@+id/btnMenuPerfil"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:soundEffectsEnabled="true"
+                android:tint="#2196F3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ver_opciones" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgFotoPerfilFrag"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/a9b7d8dc1340fe844d5e88285a175527_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txtvNombrePerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Angelica Tenecela"
+                android:textAlignment="center"
+                android:textColor="#2196F3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgFotoPerfilFrag" />
+
+            <TextView
+                android:id="@+id/txtvUbicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:drawableStart="@drawable/baseline_location_on_15"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtvNombrePerfil" />
+
+            <LinearLayout
+                android:id="@+id/llOpiniones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtvUbicacion">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/grupo_sanguineo" />
+
+                        <TextView
+                            android:id="@+id/txtvSangre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+AB"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imgGenero"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/simbolo_masculino" />
+
+                        <TextView
+                            android:id="@+id/txtvEdad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="18"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/calificacion_profesional" />
+
+                        <TextView
+                            android:id="@+id/txtcalificacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="3.5"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/atencion_realizada" />
+
+                        <TextView
+                            android:id="@+id/txtatencion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="20"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnEditPerfil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#2196F3"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Editar perfil"
+                android:textColor="#FFFFFF"
+                android:visibility="visible"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/editar_perfil"
+                app:iconGravity="textStart"
+                app:iconSize="14dp"
+                app:iconTint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llOpiniones" />
+
+            <HorizontalScrollView
+                android:id="@+id/hsvFotoTrabajo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEditPerfil">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="200dp"
+                            android:layout_height="170dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/foto1" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView72"
+                            android:layout_width="200dp"
+                            android:layout_height="170dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/foto2" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView73"
+                            android:layout_width="200dp"
+                            android:layout_height="170dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/foto3" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtvAcercaMi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Acerca de mi"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hsvFotoTrabajo" />
+
+            <TextView
+                android:id="@+id/txtvInfoAcercaMi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Soy una médica comprometida con el cuidado de la salud y el bienestar de mis pacientes. Mi enfoque se basa en brindar atención médica de calidad y compasiva, centrándome en establecer una relación de confianza para ofrecer un cuidado integral y personalizado."
+                android:textColor="#000000"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtvAcercaMi" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtvInfoAcercaMi">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/txtAlergia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alergias"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvAlergias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdvCronicas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/txtCronicas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enfermedades cronicas"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvCronicas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdvCongenitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cdvCronicas">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/txtCongenitas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enfermedades congenitas"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvCongenitas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtCalificaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Calificaciones y opiniones"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cdvCongenitas" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvOpiniones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCalificaciones" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/fondoProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#2196F3"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

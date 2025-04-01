@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Reportes">
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnAtrasReporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:tint="#000000"
+            app:srcCompat="@drawable/angulo_pequeno_izquierdo_24" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="Reportes"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnReporteChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#2196F3"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="110dp"
+                android:text="Reporte para los chats"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/angulo_pequeno_derecho_24"
+                app:iconGravity="end"
+                app:iconTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnReporteCita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#2196F3"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="110dp"
+                android:text="Reporte para las citas"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/angulo_pequeno_derecho_24"
+                app:iconGravity="end"
+                app:iconTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnReporteClientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#2196F3"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="110dp"
+                android:text="Reporte para los clientes"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/angulo_pequeno_derecho_24"
+                app:iconGravity="end"
+                app:iconTint="#FFFFFF" />
+
+            <!--  <Button
+                  android:id="@+id/btnReporteMensajes"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="8dp"
+                  android:backgroundTint="#2196F3"
+                  android:insetTop="0dp"
+                  android:insetBottom="0dp"
+                  android:minWidth="110dp"
+                  android:text="Reporte para los mensajes"
+                  android:textColor="#FFFFFF"
+                  app:cornerRadius="10dp"
+                  app:icon="@drawable/angulo_pequeno_derecho_24"
+                  app:iconGravity="end"
+                  app:iconTint="#FFFFFF" />
+
+            <Button
+                  android:id="@+id/btnReporteAgendas"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="8dp"
+                  android:backgroundTint="#2196F3"
+                  android:insetTop="0dp"
+                  android:insetBottom="0dp"
+                  android:minWidth="110dp"
+                  android:text="Reporte para las agendas"
+                  android:textColor="#FFFFFF"
+                  app:cornerRadius="10dp"
+                  app:icon="@drawable/angulo_pequeno_derecho_24"
+                  app:iconGravity="end"
+                  app:iconTint="#FFFFFF" />-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

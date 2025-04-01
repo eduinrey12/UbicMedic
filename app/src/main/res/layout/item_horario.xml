@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/crdCita"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:id="@+id/llFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtvFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09:00 AM"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtvhorafin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09:50 AM"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vwEstado"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#2196F3" />
+
+        <LinearLayout
+            android:id="@+id/llDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txtvNombreHorario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Motivo"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvPersona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_person_15"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="La venus"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtvUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_location_on_15"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Edwin Rey"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnMenuCita"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:tint="#2196F3"
+            app:srcCompat="@drawable/ver_opciones" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

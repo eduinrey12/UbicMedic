@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnvMenu"
+        style="@style/AppBottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:itemBackground="@null"
+        app:itemIconSize="24dp"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flHome"
+        app:menu="@menu/bottom_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/flHome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:name="com.example.saludencasa.HomeFragment"
+        app:layout_constraintBottom_toTopOf="@+id/bnvMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </androidx.fragment.app.FragmentContainerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

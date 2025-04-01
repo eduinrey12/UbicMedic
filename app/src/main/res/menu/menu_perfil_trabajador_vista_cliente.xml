@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/op_reportar"
+        android:title="Reportar"
+        />
+
+    <item
+        android:id="@+id/op_bloquear"
+        android:title="Bloquear"
+        />
+    <item
+        android:id="@+id/op_desbloquear"
+        android:title="Desbloquear"
+        />
+</menu>

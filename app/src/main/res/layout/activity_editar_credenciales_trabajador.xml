@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".EditarCredencialesTrabajador">
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnAtrasReporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:tint="#000000"
+            app:srcCompat="@drawable/angulo_pequeno_izquierdo_24" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="Editar credenciales"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llEditarCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Correo"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtCorreo"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="text"
+                            android:text="Name"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/btnEditCorreo"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        android:tint="#2196F3"
+                        app:srcCompat="@drawable/editar_perfil" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llOpcionesCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnCancelarCorreo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#E91E63"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:minWidth="110dp"
+                        android:text="Cancelar"
+                        android:textColor="#FFFFFF"
+                        app:cornerRadius="10dp" />
+
+                    <Button
+                        android:id="@+id/btnGuardarCorreo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#2196F3"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:minWidth="110dp"
+                        android:text="Guardar"
+                        android:textColor="#FFFFFF"
+                        app:cornerRadius="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEditarClave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Contraseña actual"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtClaveActual"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="●●●●●●●●●●●●●●"
+                            android:inputType="textPassword"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/btnEditClave"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        android:tint="#2196F3"
+                        app:srcCompat="@drawable/editar_perfil" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llEditClaveNueva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="258dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtNombreChatw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Contraseña nueva"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtClaveNueva"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:inputType="textPassword"
+                            android:hint="Escribe tu contraseña"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llEditClaveConfirmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="258dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtNombreChatws"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Repetir contraseña nueva"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtClaveConfirmar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:inputType="textPassword"
+                            android:hint="Escribe tu contraseña"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llOpcionesClave"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnCancelarClave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#E91E63"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:minWidth="110dp"
+                        android:text="Cancelar"
+                        android:textColor="#FFFFFF"
+                        app:cornerRadius="10dp" />
+
+                    <Button
+                        android:id="@+id/btnGuardarClave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#2196F3"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:minWidth="110dp"
+                        android:text="Guardar"
+                        android:textColor="#FFFFFF"
+                        app:cornerRadius="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

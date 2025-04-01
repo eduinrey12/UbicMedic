@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/op_contacto"
+        android:title="Ver contacto"
+        />
+
+    <item
+        android:id="@+id/op_mapa"
+        android:title="Ver mapa"
+        />
+
+    <item
+        android:id="@+id/op_finalizar"
+        android:title="Finalizar cita"
+        />
+
+</menu>

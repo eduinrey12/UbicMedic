@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_Home"
+        android:title="Inicio"
+        android:icon="@drawable/hogar64b"
+    />
+
+    <item
+        android:id="@+id/nav_Horario"
+        android:title="Horario"
+        android:icon="@drawable/calendario64b"
+        />
+
+    <item
+        android:id="@+id/nav_mundo"
+        android:title="Mapa"
+        android:icon="@drawable/ubicacion64b"
+        />
+
+    <item
+        android:id="@+id/nav_chat"
+        android:title="Chat"
+        android:icon="@drawable/charla64b"
+        />
+
+    <item
+        android:id="@+id/nav_Perfil"
+        android:title="Perfil"
+        android:icon="@drawable/perfil64b"
+        />
+</menu>

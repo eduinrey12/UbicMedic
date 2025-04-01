@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "836816741836",
+    "project_id": "saludencasa-6173e",
+    "storage_bucket": "saludencasa-6173e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836816741836:android:33ae7b866a483a950d6969",
+        "android_client_info": {
+          "package_name": "com.example.fcmpushnotifications2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836816741836-apetj6edot8h65mfugh6t51se85fnf3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnjeRhtf-pgOTclOYZ93BJbmM7gq7A_r0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836816741836-apetj6edot8h65mfugh6t51se85fnf3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836816741836:android:0f384804699b7d9a0d6969",
+        "android_client_info": {
+          "package_name": "com.example.saludencasa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836816741836-apetj6edot8h65mfugh6t51se85fnf3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnjeRhtf-pgOTclOYZ93BJbmM7gq7A_r0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836816741836-apetj6edot8h65mfugh6t51se85fnf3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".TodosTrabajadoresFragment">
+
+    <LinearLayout
+        android:id="@+id/llCabecera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#F0F0F0"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="0dp">
+
+            <EditText
+                android:id="@+id/txtUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="?android:attr/actionModeWebSearchDrawable"
+                android:drawablePadding="10dp"
+                android:drawableTint="#2196F3"
+                android:hint="Buscar"
+                android:textColor="#000000"
+                android:textColorHighlight="#2196F3"
+                android:textColorHint="#2196F3" />
+        </androidx.cardview.widget.CardView>
+        <FrameLayout
+            android:id="@+id/btnNotificacion"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:scaleType="centerInside"
+                android:tint="#2196F3"
+                app:srcCompat="@drawable/notificacion__1_" />
+            <TextView
+                android:id="@+id/contador_notificaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Todos los recomendados:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llCabecera" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvTodosLosTrabajadores"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+</androidx.constraintlayout.widget.ConstraintLayout>

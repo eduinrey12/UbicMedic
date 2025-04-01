@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".PerfilCliente_vistaTrabajador">
+
+    <ScrollView
+        android:id="@+id/scvPerfilContenido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <ImageButton
+                android:id="@+id/btnMenuPerfil"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:soundEffectsEnabled="true"
+                android:tint="#2196F3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ver_opciones" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgFotoPerfilFrag"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/a9b7d8dc1340fe844d5e88285a175527_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txtvNombrePerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Angelica Tenecela"
+                android:textAlignment="center"
+                android:textColor="#2196F3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgFotoPerfilFrag" />
+
+            <TextView
+                android:id="@+id/txtvUbicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:drawableStart="@drawable/baseline_location_on_15"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtvNombrePerfil" />
+
+            <LinearLayout
+                android:id="@+id/llOpiniones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtvUbicacion">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/grupo_sanguineo" />
+
+                        <TextView
+                            android:id="@+id/txtvSangre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+AB"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imgGenero"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/simbolo_masculino" />
+
+                        <TextView
+                            android:id="@+id/txtvEdad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="18"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llOpiniones">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/txtAlergia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alergias"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvAlergias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdvCronicas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/txtCronicas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enfermedades cronicas"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvCronicas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdvCongenitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cdvCronicas">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/txtCongenitas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enfermedades congenitas"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvCongenitas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/fondoProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="#2196F3"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img404"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/error404" />
+
+    <TextView
+        android:id="@+id/txtv404"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="404"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/img404"
+        app:layout_constraintStart_toStartOf="@+id/img404"
+        app:layout_constraintTop_toTopOf="@+id/img404" />
+
+    <TextView
+        android:id="@+id/txtv404Mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-5dp"
+        android:text="Pagina no encontrada"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/img404"
+        app:layout_constraintEnd_toEndOf="@+id/img404"
+        app:layout_constraintStart_toStartOf="@+id/img404" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

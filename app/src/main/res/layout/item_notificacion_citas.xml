@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgFotoPerfilNotificacion"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/a9b7d8dc1340fe844d5e88285a175527_large" />
+
+        <LinearLayout
+            android:id="@+id/llNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNombreNotifiacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Angelica Tenecela"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/llFechaAtencion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtFechaAtencion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fecha: 2000-01-01"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtHoraAtencion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hora: 12:00"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lugar: "
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtFechaCreacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="05/07/23"
+                android:textAlignment="textEnd"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/llOpciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAceptar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2196F3"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="Aceptar"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="5dp" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E91E63"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="Rechazar"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

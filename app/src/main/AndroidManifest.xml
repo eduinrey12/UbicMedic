@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/seguro"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".Reportes"
+            android:exported="false" />
+        <activity
+            android:name=".CalificarTrabajador"
+            android:exported="false" />
+        <activity
+            android:name=".ReportarPerfil"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notifaction" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/selecionado" />
+
+        <activity
+            android:name=".Notificaciones"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilTrabajador_vistaCliente"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilCliente_vistaTrabajador"
+            android:exported="false" />
+        <activity
+            android:name=".GestionarEnfermedades"
+            android:exported="false" />
+        <activity
+            android:name=".Historial"
+            android:exported="false" />
+        <activity
+            android:name=".ChatDetalleCliente"
+            android:exported="false" />
+        <activity
+            android:name=".EditarCredencialesTrabajador"
+            android:exported="false" />
+        <activity
+            android:name=".ProfesionDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarPerfilTrabajador"
+            android:exported="false" />
+        <activity
+            android:name=".CrearCuentaCliente"
+            android:exported="false" />
+        <activity
+            android:name=".ChatDetalle"
+            android:exported="false" />
+        <activity
+            android:name=".SeleccionarTipoCuenta"
+            android:exported="false" />
+        <activity
+            android:name=".CrearCuentaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
