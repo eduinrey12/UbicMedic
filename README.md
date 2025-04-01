@@ -45,7 +45,9 @@ Reportar usuario:
 ![image](https://github.com/user-attachments/assets/ac6fcee1-4e06-4f40-b5b5-3f9c4e6a64ef)
 
 Bloquear usuario: 
+
 ![image](https://github.com/user-attachments/assets/7baf738b-0982-40b9-80c7-a8a68ed4e7cd)
 
 Calificar la atencion:
+
 ![image](https://github.com/user-attachments/assets/2768a5b3-3c80-4d00-985e-21802d39f613)
